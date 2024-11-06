@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar .nav.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav.list li {
+    float: left;
+}
+
+.navbar .nav.list li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar .nav.list li a:hover {
+    background-color: #111;
+}
+
+.header {
+    text-align: center;
+    padding: 50px;
+    background-color: #f1f1f1;
+}
+
+.header.title {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.header.subtitle {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.projets {
+    padding: 20px;
+}
+
+.projets h2 {
+    text-align: center;
+}
+
+.projwebdev, .projdev {
+    margin: 20px 0;
+}
+
+.projwebdev h3, .projdev h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.projwebdev ul, .projdev ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.projwebdev ul li, .projdev ul li {
+    margin: 5px 0;
+}
+
+.projwebdev ul li a, .projdev ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.projwebdev ul li a:hover, .projdev ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-bg {
+    background-color: #444;
+    padding: 10px 0;
+}
+
+.social-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-list li {
+    margin: 0 10px;
+}
+
+.social-list li img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.social-list li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.social-list li a:hover {
+    text-decoration: underline;
+}
