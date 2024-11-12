@@ -4,43 +4,41 @@
     <meta charset="UTF-8"/>
     <link rel="icon" type="image/svg+xml" href="assets/img/"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" type="text/css" href="assets/main.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/style.css"/>
+    <script src="assets/main.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
-    <nav class="navbar bg">
-        <ul class ="nav list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="/readme">About</a></li>
-        </ul>
-    </nav>
+<nav class="navbar bg">
+    <ul class="nav list">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="" class="dropbtn">Projets</a>
+            <div class="dropdown-content">
+                <a href="projets/webdev/webdev.html">Dev Web</a>
+                <a href="projets/dev/dev.html">Dev</a>
+            </div>
+        </li>
+        <li><a href="veille/veille.html">Veille</a></li>
+    </ul>
+</nav>
+<main>
     <header class="header">
         <h1 class="header title">Bienvenue sur mon portfolio</h1>
         <p class="header subtitle">Il s'agit d'un simple portfolio</p>
     </header>
-    <section class="projets">
-        <h2>Mes projets</h2>
-        <div class="projwebdev list">
-            <ul class="projwebdev">Developpement web
-                <li><a href="projets/webdev/site-marchand.html">Site Marchand</a></li>
-                <li><a href="projets/webdev/pizzeria.html">Pizzeria</a></li>
-            </ul>
-        </div>
-        <div class="projdev list">
-            <ul class="projdev">Developpement
-                <li><a href="projets/dev/morpion.html">Morpion</a></li>
-                <li><a href="projets/dev/calculatrice.html">Calculatrice</a></li>
-            </ul>
-        </div>
-    </section>
-</body>
+    
+</main>
 <footer>
     <p>&copy; Swann</p>
     <div class="social-bg">
         <ul class="social-list">
-            <li><img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt="linkedin-ico"><a href="https://www.linkedin.com/in/swann-brillant-8803981b1/">Linkedin</a></li>
-            <li><img src="https://img.icons8.com/?size=100&id=106567&format=png&color=000000" alt="github-ico"><a href="https://github.com/hatchikuji/">Github</a></li>
+            <li><img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt="linkedin-ico"><a
+                    href="https://www.linkedin.com/in/swann-brillant-8803981b1/">Linkedin</a></li>
+            <li><img src="https://img.icons8.com/?size=100&id=106567&format=png&color=000000" alt="github-ico"><a
+                    href="https://github.com/hatchikuji/">Github</a></li>
         </ul>
     </div>
 </footer>
+</body>
 </html>
