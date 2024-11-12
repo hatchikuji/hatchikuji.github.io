@@ -1,9 +1,11 @@
 /* Ensure the body takes up the full height of the viewport */
 html, body {
     height: 100%;
-    font-family: Arial, sans-serif;
+    font-family: roboto, monospace;
     margin: 0;
     padding: 0;
+    color: #f1f1f1;
+    background: #111111;
 }
 /* Flexbar layout for the body */
 body {
@@ -18,7 +20,7 @@ main {
 
 /* Footer style */
 footer {
-    background-color: #333333;
+    background-color: #111111;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -28,7 +30,7 @@ footer {
 .header {
     text-align: center;
     padding: 50px;
-    background-color: #f1f1f1;
+    background-color: #111111;
 }
 
 .header.title {
@@ -38,19 +40,21 @@ footer {
 
 .header.subtitle {
     font-size: 1.2em;
-    color: #666;
+    color: #f1f1f1;
 }
 
 /* Navbar style */
 .navbar {
-    background-color: #333;
+    background-color: #111111;
     overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .navbar .nav.list {
     list-style-type: none;
-    margin: 0;
     padding: 0;
+    margin: 0 0 0 auto;
 }
 
 .navbar .nav.list li {
@@ -63,11 +67,14 @@ footer {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
 .navbar .nav.list li a:hover {
-    background-color: #111;
+    background-color: #f1f1f1;
+    color: #111111;
 }
+
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
@@ -84,7 +91,7 @@ footer {
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    background: #333333;
+    background-color: #111111;
     color: white;
     padding: 12px 16px;
     text-decoration: none;
@@ -92,44 +99,28 @@ footer {
     text-align: left;
 }
 
-.projets {
-    padding: 20px;
+/* About page style */
+.profile-bg {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+    display: flex;
 }
 
-.projets h2 {
-    text-align: center;
+.profile-bg img {
+    width: 150px;
+    height: auto;
+    margin-left: auto;
 }
 
-.projwebdev, .projdev {
-    margin: 20px 0;
-}
-
-.projwebdev h3, .projdev h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.projwebdev ul, .projdev ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.projwebdev ul li, .projdev ul li {
-    margin: 5px 0;
-}
-
-.projwebdev ul li a, .projdev ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-.projwebdev ul li a:hover, .projdev ul li a:hover {
-    text-decoration: underline;
+.profile-description{
+    text-align: left;
+    margin: 0 auto;
+    width: 50%;
 }
 
 /* Social bar style */
 .social-bg {
-    background-color: #444;
+    background-color: #111111;
     padding: 10px 0;
 }
 
