@@ -107,12 +107,15 @@ footer {
     display: block;
     text-align: left;
 }
+/* General style */
 
-/* About page style */
-.header-about {
+.header-title {
     padding: 20px;
     text-align: center;
 }
+
+/* About page style */
+
 .profile-bg {
     padding: 20px 0;
     display: grid;
@@ -142,13 +145,6 @@ footer {
     height: 90%;
     position: absolute;
     
-}
-
-.JqqAIg {
-    align-items: unset !important;
-    display: flex;
-    justify-content: center;
-    position: relative;
 }
 
 .profile-cv, .profile-description {
