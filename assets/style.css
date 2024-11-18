@@ -4,7 +4,7 @@ html, body {
     font-family: roboto, monospace;
     margin: 0;
     padding: 0;
-    color: #f1f1f1;
+    color: #ffffff;
     background: #111111;
 }
 /* Flexbar layout for the body */
@@ -21,7 +21,7 @@ main {
 /* Footer style */
 footer {
     background-color: #111111;
-    color: #f1f1f1;
+    color: #ffffff;
     text-align: center;
     padding: 10px 0;
     position: fixed;
@@ -46,7 +46,7 @@ footer {
 
 .header.subtitle {
     font-size: 1.2em;
-    color: #f1f1f1;
+    color: #ffffff;
 }
 
 /* Navbar style */
@@ -72,7 +72,7 @@ footer {
 
 .navbar .nav.list li a {
     display: block;
-    color: #f1f1f1;
+    color: #ffffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -80,39 +80,60 @@ footer {
 }
 
 .navbar .nav.list li a:hover {
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     color: #111111;
 }
 
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    z-index: 1;
-}
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    background-color: #111111;
-    color: #f1f1f1;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
 /* General style */
 
 .header-title {
     padding: 20px;
     text-align: center;
 }
+
+/* Social bar style */
+.social-bg {
+    background-color: #111111;
+    padding: 10px 0;
+}
+
+.social-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-list li {
+    margin: 0 10px;
+}
+
+.social-list li img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.social-list li a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.social-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Projers page style */
+.projets-container{
+    display: flex;;
+}
+
+.projets-div{
+    width: 45%;
+    padding: 4%;
+}
+
 
 /* About page style */
 
@@ -149,45 +170,83 @@ footer {
 
 .profile-cv, .profile-description {
     width: 50%;
-    padding: 10px;
+    padding: 2%;
     box-sizing: border-box;
+    
 }
 
 .profile-description{
     text-align: left;
 	justify-self: flex-end;
-
+    padding-right: 5%;
 }
 
-/* Social bar style */
-.social-bg {
+.download-cv {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.download-btn {
+    display: inline-block;
     background-color: #111111;
-    padding: 10px 0;
-}
-
-.social-list {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.social-list li {
-    margin: 0 10px;
-}
-
-.social-list li img {
-    width: 24px;
-    height: 24px;
-    vertical-align: middle;
-}
-
-.social-list li a {
-    color: #f1f1f1;
+    color: #ffffff;
     text-decoration: none;
-    margin-left: 5px;
+    padding: 3% 4%;
+    border-radius: 0;
+    font-size: 1em;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.social-list li a:hover {
-    text-decoration: underline;
+.download-btn:hover {
+    background-color: #ffffff;
+    color: #111111;
+    cursor: pointer;
+}
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar .nav.list {
+        float: none;
+        width: 100%;
+        text-align: center;
+        display: ruby;
+        padding: 2%;
+    }
+    
+    .dropdown-content {
+        position: relative;
+    }
+
+    .navbar .nav.list li a {
+        text-align: left;
+        padding: 10px;
+    }
+
+    .header.title {
+        height: auto;
+        padding: 20px;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iframe-cv {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10%;
+    }
+
+    .profile-cv, .profile-description {
+        width: 100%;
+        position: relative;
+        padding: 3% 3% 40%;
+    }
+    
+    .profile-description {
+        text-align: justify;
+    }
 }
