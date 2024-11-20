@@ -103,7 +103,7 @@ footer {
 }
 
 .navbar .nav.list li a:hover {
-    background-color: #ffffff;
+    background-color: #8243AE;
     color: #000000;
     text-decoration: underline;
 }
@@ -160,7 +160,7 @@ footer {
     align-self: flex-end;
 }
 
-.working-tools{
+.i-desc{
     display: flex;
     justify-content: center;
     align-items: center;
