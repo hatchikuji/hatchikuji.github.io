@@ -234,6 +234,8 @@ footer {
 .stage-sec{
     padding-left: 15%;
     padding-right: 15%;
+    display: grid;
+    justify-items: center;
 }
 
 .stage-list{
@@ -247,6 +249,7 @@ footer {
     text-align: center;
     border-radius: 1px;
     padding-left: 0;
+    width: 70%;
     
 }
 
@@ -272,7 +275,8 @@ footer {
     padding-right: 15%;
     width: auto;
     height: auto;
-    display: flex;
+    display: grid;
+    justify-items: center;
 }
 
 .certif-list{
@@ -288,6 +292,7 @@ footer {
     transition: transform 0.3s;
     padding-left: 0;
     margin: 0;
+    width: 40%;
 }
 
 .certif-list img{
