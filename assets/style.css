@@ -64,7 +64,6 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 50vh;
 }
 
 .header.subtitle {
@@ -230,6 +229,79 @@ footer {
     color: #000000;
 }
 
+/* Stage page style */
+
+.stage-sec{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.stage-list{
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    list-style: none;
+    justify-content: center;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 1px;
+    padding-left: 0;
+    
+}
+
+.headerstage{
+    padding: 2%;
+}
+
+.stage-list img{
+    max-width: 100%;
+    height: auto;
+}
+
+.stage{
+    border: solid #252525;
+    padding: 2%;
+    width: 50%;
+}
+
+
+
+.certif-sec{
+    padding-left: 15%;
+    padding-right: 15%;
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
+.certif-list{
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    list-style: none;
+    justify-content: center;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 1px;
+    transition: transform 0.3s;
+    padding-left: 0;
+    margin: 0;
+}
+
+.certif-list img{
+    max-width: 100%;
+    height: auto;
+}
+
+.certif{
+    border: solid #252525;
+    transition: transform 0.3s;
+    padding: 2%;
+    width: 50%;
+}
+
 /* About page style */
 
 .profile-bg {
@@ -257,6 +329,7 @@ footer {
     margin-bottom: 20%;
     overflow: hidden;
 }
+
 .profile-cv {
     height: 90%;
     position: absolute;
