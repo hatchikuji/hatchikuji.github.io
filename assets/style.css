@@ -107,12 +107,6 @@ footer {
     text-decoration: underline;
 }
 
-.nav-ico {
-    width: 2em;
-    height: 2em;
-    vertical-align: middle;
-}
-
 /* General style */
 
 .header-title {
@@ -147,10 +141,6 @@ footer {
     color: #ffffff;
     text-decoration: none;
     margin-left: 5px;
-}
-
-.social-list li a:hover {
-    text-decoration: underline;
 }
 
 /* Index page style */
@@ -291,7 +281,6 @@ footer {
     border-radius: 1px;
     transition: transform 0.3s;
     padding-left: 0;
-    margin: 0;
     width: 40%;
 }
 
