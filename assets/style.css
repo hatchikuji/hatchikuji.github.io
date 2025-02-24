@@ -1,11 +1,17 @@
 /* Ensure the body takes up the full height of the viewport */
+:root{
+    --primary-color: #8243AE;
+    --secondary-color: #000000;
+    --tertiary-color: #ffffff;
+}
+
 html, body {
     height: 100%;
     font-family: roboto, monospace;
     margin: 0;
     padding: 0;
-    color: #ffffff;
-    background: #000000;
+    color: var(--tertiary-color);
+    background: var(--secondary-color);
 }
 /* Flexbar layout for the body */
 body {
@@ -20,8 +26,8 @@ main {
 
 /* Footer style */
 footer {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
     text-align: center;
     padding: 10px 0;
     position: fixed;
@@ -33,12 +39,12 @@ footer {
 .header {
     text-align: center;
     padding: 50px;
-    background-color: #000000;
+    background-color: var(--secondary-color);
 }
 
 .typewriter h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #ffffff; /* The typwriter cursor */
+    border-right: .15em solid var(--tertiary-color); /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
@@ -56,7 +62,7 @@ footer {
 /* The typewriter cursor effect */
 @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #8243AE; }
+    50% { border-color: var(--primary-color); }
 }
 
 .header.title {
@@ -68,12 +74,12 @@ footer {
 
 .header.subtitle {
     font-size: 1.2em;
-    color: #ffffff;
+    color: var(--tertiary-color);
 }
 
 /* Navbar style */
 .navbar {
-    background-color: #000000;
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: flex-end;
     z-index: 1000;
@@ -94,7 +100,7 @@ footer {
 
 .navbar .nav.list li a {
     display: block;
-    color: #ffffff;
+    color: var(--tertiary-color);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -102,8 +108,8 @@ footer {
 }
 
 .navbar .nav.list li a:hover {
-    background-color: #8243AE;
-    color: #000000;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     text-decoration: underline;
 }
 
@@ -116,7 +122,7 @@ footer {
 
 /* Social bar style */
 .social-bg {
-    background-color: #000000;
+    background-color: var(--secondary-color);
     padding: 10px 0;
 }
 
@@ -138,7 +144,7 @@ footer {
 }
 
 .social-list li a {
-    color: #ffffff;
+    color: var(--tertiary-color);
     text-decoration: none;
     margin-left: 5px;
 }
@@ -179,8 +185,8 @@ footer {
     list-style-type: none;
     display: flex;
     align-items: center;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
     padding: 20px;
     text-align: center;
     border-radius: 1px;
@@ -205,8 +211,8 @@ footer {
 
 .redirect-btn{
     display: inline-block;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
     text-decoration: none;
     padding: 3% 4%;
     border-radius: 0;
@@ -215,8 +221,8 @@ footer {
 }
 
 .redirect-btn:hover{
-    background-color: #8243AE;
-    color: #000000;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 /* Stage page style */
@@ -234,8 +240,8 @@ footer {
     gap: 10px;
     list-style: none;
     justify-content: center;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
     text-align: center;
     border-radius: 1px;
     padding-left: 0;
@@ -253,6 +259,7 @@ footer {
 }
 
 .stage{
+    display: grid;
     border: solid #252525;
     padding: 2%;
     width: 50%;
@@ -275,8 +282,8 @@ footer {
     gap: 10px;
     list-style: none;
     justify-content: center;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
     text-align: center;
     border-radius: 1px;
     transition: transform 0.3s;
@@ -350,8 +357,8 @@ footer {
 
 .download-btn {
     display: inline-block;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
     text-decoration: none;
     padding: 3% 4%;
     border-radius: 0;
@@ -360,8 +367,8 @@ footer {
 }
 
 .download-btn:hover {
-    background-color: #8243AE;
-    color: #000000;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     cursor: pointer;
 }
 
