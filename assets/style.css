@@ -206,6 +206,31 @@ footer {
 
 /* Stage page style */
 
+.bts-docs-sec{
+    padding-left: 15%;
+    padding-right: 15%;
+    display: grid;
+    justify-items: center;
+}
+
+.bts-docs-list{
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    list-style: none;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    text-align: center;
+    border-radius: 1px;
+    padding-left: 0;
+    width: 70%;
+}
+
+.headerstage{
+    padding: 2%;
+}
+
 .stage-sec{
     padding-left: 15%;
     padding-right: 15%;
@@ -228,10 +253,6 @@ footer {
     
 }
 
-.headerstage{
-    padding: 2%;
-}
-
 .stage-list img{
     max-width: 100%;
     height: auto;
@@ -243,8 +264,6 @@ footer {
     padding: 2%;
     width: 50%;
 }
-
-
 
 .certif-sec{
     padding-left: 15%;
