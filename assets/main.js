@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         typeWriter();
     }
 
+
 //     const circle = document.createElement('div');
 //     circle.classList.add('circle');
 //     document.body.appendChild(circle);
