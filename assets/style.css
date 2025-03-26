@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: 'Rodin Pro DB';
-    src: url("font/FOT-RodinProN-DB.otf") format('opentype');
+    src: url("../assets/font/FOT-RodinProN-DB.otf") format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -274,7 +274,7 @@ figure {
     flex-direction: column;
     margin: 0;
     margin-bottom: 1rem;
-    background-color: #dcd8c0;
+    background-color: var(--fourth-color);
     padding: 0.5rem;
 }
 figure > :not(figcaption) {
@@ -291,8 +291,8 @@ figure > figcaption {
     margin-bottom: 0.5rem;
     padding: 0.5rem 1rem;
     font-size: 1.2rem;
-    background-color: #454138;
-    color: #bab5a1;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
 }
 /* Social bar style */
 .social-bg {
