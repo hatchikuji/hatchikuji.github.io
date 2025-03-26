@@ -35,6 +35,7 @@ body {
 /* Main style */
 main {
     height: 100%;
+    width: auto;
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -326,7 +327,7 @@ figure > figcaption {
 /* Header style */
 .header {
     text-align: center;
-    padding: 50px;
+    padding: 50px 0 10px 0;
 }
 
 
@@ -370,7 +371,7 @@ figure > figcaption {
 }
 
 .navbar .nav.list li a:hover {
-    background-color: var(--font-color);
+    background-color: var(--tertiary-color);
     color: var(--primary-color);
     text-decoration: underline;
 }
@@ -541,46 +542,24 @@ figure > figcaption {
 
 /* About page style */
 
-.profile-bg {
-    width: 100%;
-    height: 100%;
-    padding: 20px 0;
+.profile-container{
     display: flex;
-	align-items: stretch;
-    justify-content: center;
-}
-
-.profile {
-    object-fit: fill;
-    display: flex;
-    position: relative;
-    align-items: stretch;
-    justify-content: center;
-    padding: 20px 0;
+    justify-content: space-evenly;
+    min-height: 450PX;
 }
 
 .profile-cv {
-    
+    width: 30%;
 }
 
-.profile-cv img {
+.profile-cv img{
     width: 100%;
-    height: auto;
-    display: block;
-}
-
-.profile-cv, .profile-description {
-    width: 50%;
-    padding: 2%;
-    flex: 1;
-    box-sizing: border-box;
-    
 }
 
 .profile-description{
-    text-align: left;
-	justify-self: flex-end;
-    padding-right: 5%;
+    width: 45%;
+    padding: 3%;
+    scroll-behavior: smooth;
 }
 
 .download-cv {
