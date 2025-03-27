@@ -6,6 +6,7 @@
     --fourth-color: #dcd8c0;
     --grid-color: #ccc8b1;
     --grid-color2: #ccc8b100;
+    --symbol-color: #b5b09c;
     font-family: "Rodin Pro DB", serif;
 }
 
@@ -60,6 +61,8 @@ main {
     display: flex;
     flex: 1;
     flex-direction: column;
+    z-index: 1;
+    position: relative;
 }
 
 /* Footer style */
@@ -104,7 +107,19 @@ h6 {
     font-weight: lighter;
     letter-spacing: 0.1rem;
 }
-
+cite {
+    position: relative;
+    padding-left: 2rem;
+}
+cite:before {
+    content: '';
+    position: absolute;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: var(--tertiary-color);
+    margin-left: -1rem;
+    top: 0.25em;
+}
 input[type=submit]:not(:disabled),
 input[type=button]:not(:disabled),
 input[type=reset]:not(:disabled) {
@@ -282,6 +297,33 @@ button:not(:disabled):active:after,
     color: var(--secondary-color);
     font-weight: lighter;
 }
+blockquote {
+    position: relative;
+    padding: 0.5rem;
+}
+blockquote:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1.5rem;
+    bottom: 0;
+    height: 100%;
+    width: 0.3rem;
+    border: solid var(--secondary-color);
+    border-width: 0 0.2rem 0 0.6rem;
+}
+cite {
+    position: relative;
+    padding-left: 2rem;
+}
+cite:before {
+    content: '';
+    position: absolute;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: var(--tertiary-color);
+    top: 0.25em;
+}
 figure {
     display: -webkit-box;
     display: -moz-box;
@@ -371,7 +413,6 @@ figure > figcaption {
     top: 0;
     width: 100%;
     border-bottom: var(--tertiary-color) solid 1px;
-    background-color: var(--primary-color);
 }
 
 .navbar .nav.list {
@@ -474,13 +515,28 @@ figure > figcaption {
 }
 
 /* BTS page style */
-
-
+.fig-img{
+    display: flex;
+    width: 50%;
+}
+.fig-img div{
+    align-self: center;
+    justify-content: center;
+}
+.img-container{
+    width: 100%;
+}
 .img-container img{
     width: 100%;
     height: auto;
 }
-
+.bts-docs{
+ display: contents;
+}
+.grille{
+    display: flex;
+    gap: 1em;
+}
 .bts-docs-sec{
     padding-left: 15%;
     padding-right: 15%;
@@ -490,14 +546,9 @@ figure > figcaption {
 
 .bts-docs-list{
     display: flex;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
+    gap: 1rem;
     list-style: none;
-    justify-content: center;
-    text-align: center;
-    border-radius: 1px;
-    padding-left: 0;
-    width: 70%;
+    text-align: left;
 }
 
 .headerstage{
@@ -617,6 +668,107 @@ figure > figcaption {
     border-radius: 50%;
     pointer-events: none;
     transition: transform 0.1s ease;
+}
+/* Container for the corner decoration */
+.corner-decor {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Ensure it doesn't interfere with other elements */
+    transform-origin: bottom right;
+}
+
+/* Style for the arcs */
+.arc {
+    position: absolute;
+    border: 2px solid var(--symbol-color);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.arc1 {
+    width: 145.11vh;
+    height: 145.11vh;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+}
+
+.arc2 {
+    width: 140.44vh;
+    height: 140.44vh;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+}
+.arc3 {
+    width: 145.11vh;
+    height: 145.11vh;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+.arc4 {
+    width: 140.44vh;
+    height: 140.44vh;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+/* Style for the lines */
+.line {
+    position: absolute;
+    width: 2px;
+    background-color: var(--symbol-color);
+    box-sizing: border-box;
+}
+
+.line1 {
+    bottom: 0;
+    right: 0;
+    height: 130vh; /* Adjust the height to reach the middle of the page */
+    transform: rotate(-45deg); /* Adjust the angle to point towards the middle */
+    transform-origin: bottom right;
+}
+
+.line2 {
+    bottom: 0;
+    right: 3vw;
+    height: 110vh;
+    transform: rotate(-45deg);
+    transform-origin: bottom right;
+}
+
+.line3 {
+    bottom: 0;
+    right: -3vw;
+    height:  125vh;
+    transform: rotate(-45deg);
+    transform-origin: bottom right;
+}
+.line4 {
+    top: 0;
+    left: 0;
+    height:  130vh;
+    transform: rotate(-45deg);
+    transform-origin: top left;
+}
+.line5 {
+    top: 0;
+    left: 3vw;
+    height:  110vh;
+    transform: rotate(-45deg);
+    transform-origin: top left;
+}
+.line6 {
+    top: 0;
+    left: -3vw;
+    height:  125vh;
+    transform: rotate(-45deg);
+    transform-origin: top left;
 }
 
 

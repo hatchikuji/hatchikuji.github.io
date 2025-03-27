@@ -27,6 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
     });
 
+    window.addEventListener('resize', function() {
+        const scale = 1 / window.devicePixelRatio;
+        document.querySelector('.corner-decor').style.transform = `scale(${scale})`;
+    });
 
 //     const circle = document.createElement('div');
 //     circle.classList.add('circle');
