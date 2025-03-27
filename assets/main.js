@@ -1,21 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const text = "Bienvenue sur mon portfolio.";
-    const typewriterElement = document.querySelector(".typewriter");
-    let i = 0;
-
-    function typeWriter() {
-        if (i < text.length) {
-            typewriterElement.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(typeWriter, 60);
-        }
-    }
-
-    if (typewriterElement) {
-        typeWriter();
-    }
-
-    let lastScrollTop = 0;
+        let lastScrollTop = 0;
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
         const scrollTop = window.scrollY || document.documentElement.scrollTop;
