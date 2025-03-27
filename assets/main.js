@@ -15,6 +15,18 @@ document.addEventListener('DOMContentLoaded', () => {
         typeWriter();
     }
 
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            navbar.style.top = -scrollTop + 'px';
+        } else {
+            navbar.classList.remove('hidden');
+        }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+    });
+
 
 //     const circle = document.createElement('div');
 //     circle.classList.add('circle');

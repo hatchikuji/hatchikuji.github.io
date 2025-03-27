@@ -13,7 +13,7 @@
     <title>Stages</title>
 </head>
 <body>
-<nav class="navbar">
+<nav class="navbar" id="navbar">
     <ul class="nav list">
         <li><a href="index.html">Home</a></li>
         <li><a href="projets.html">Projets</a></li>
@@ -25,23 +25,40 @@
 <main>
     <h1 class="header-title">Détails du BTS SIO</h1>
     <section class="bts-docs-sec">
-        <ul class="bts-docs-list">
-            <li class="">
-                <h2>Emploi du temps des épreuves écrites et orales</h2>
-                <embed width="100%" height="100%" src="assets/stage/Calendrier%20des%20épreuves%20écrites.pdf"
-                       type="application/pdf"/>
-            </li>
-            <li class="">
-                <h2>Grille de synthèse</h2>
-            </li>
-        </ul>
+        <div class="bts-docs">
+            <ul class="bts-docs-list">
+                <li class="">
+                    <figure>
+                        <figcaption>Emploi du temps des épreuves écrites et orales</figcaption>
+                        <div class="img-container">
+                            <img src="assets/stage/Calendrier%20des%20épreuves%20écrites.jpg"
+                                 onclick="window.open('assets/stage/Calendrier%20des%20épreuves%20écrites.jpg','')"
+                                 alt="calendrier">
+                        </div>
+                    </figure>
+                </li>
+                <li class="">
+                    <figure>
+                        <figcaption>Grille de synthèse</figcaption>
+                        <div class="img-container">
+                            <img src="assets/stage/Grille%20de%20synthèse.jpg"
+                                 onclick="window.open('assets/stage/Grille%20de%20synthèse.jpg','')"
+                                 alt="grille">
+                        </div>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+        <div>
+
+        </div>
     </section>
     <section class="stage-sec">
         <ul class="stage-list">
             <li class="stage">
                 <h2 class="headerstage">Stage chez Roav7</h2>
                 <a href="https://www.roav7.com/">
-                    <img src="assets/img/Roav7.webp"  alt="picstage1">
+                    <img src="assets/img/Roav7.webp" alt="picstage1">
                 </a>
                 <p>Stage éffectué en seconde année de BTS</p>
                 <p> Pendant la période du 06/01/2025 - 14/02/2025</p>
@@ -60,7 +77,7 @@
             <li class="stage">
                 <h2 class="headerstage">Stage chez Haropaport</h2>
                 <a href="https://www.haropaport.com/fr">
-                    <img src="assets/img/haropaport.jpg"  alt="picstage2">
+                    <img src="assets/img/haropaport.jpg" alt="picstage2">
                 </a>
                 <p>Stage éffectué en première année de BTS</p>
                 <p> Pendant la période du 22/04/2024 - 24/05/2024</p>
@@ -88,8 +105,9 @@
                 <p>Obtention de la certification MOOC Anssi en 2024</p>
                 <p>Le 21/11/2024</p>
                 <button onclick="window.open('/assets/stage/Attestation%20ANSSI%20SBRILLANT.pdf')"
-                   class="download-btn">
-                    Télécharger </button>
+                        class="download-btn">
+                    Télécharger
+                </button>
             </li>
             <li class="certif">
                 <h2 class="headercert">Certification MOOC CNIL RDPG</h2>
@@ -99,8 +117,9 @@
                 <p>Obtention de la certification MOOC RGPD en 2023</p>
                 <p>Du 15/09/2023 au 06/10/2023</p>
                 <button onclick="window.open('/assets/stage/Certifications%20CNIL.7z')"
-                   class="download-btn">
-                    Télécharger </button>
+                        class="download-btn">
+                    Télécharger
+                </button>
             </li>
         </ul>
     </section>

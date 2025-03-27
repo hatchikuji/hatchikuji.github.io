@@ -5,7 +5,7 @@
     --tertiary-color: #454138;
     --fourth-color: #dcd8c0;
     --grid-color: #ccc8b1;
-    --grid-golor2: #ccc8b100;
+    --grid-color2: #ccc8b100;
     font-family: "Rodin Pro DB", serif;
 }
 
@@ -15,6 +15,27 @@
     font-weight: normal;
     font-style: normal;
 }
+
+/* For WebKit browsers */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: var(--primary-color); /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--tertiary-color); /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Roundness of the scrollbar thumb */
+    border: 3px solid var(--primary-color); /* Padding around the scrollbar thumb */
+}
+
+* {
+    scrollbar-width: thin; /* Width of the scrollbar */
+    scrollbar-color: var(--tertiary-color) var(--primary-color); /* Color of the scrollbar thumb and track */
+}
+
 /* Flexbar layout for the body */
 body {
     background: var(--primary-color);
@@ -22,13 +43,13 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    width: 100vw;
+    width: auto;
     margin: 0;
     padding: 0;
     font-weight: lighter;
     letter-spacing: 0.03rem;
-    background-image: linear-gradient(to right, var(--grid-color) 1px, var(--grid-golor2) 1px),
-    linear-gradient(to bottom, var(--grid-color) 1px, var(--grid-golor2) 1px);
+    background-image: linear-gradient(to right, var(--grid-color) 1px, var(--grid-color2) 1px),
+    linear-gradient(to bottom, var(--grid-color) 1px, var(--grid-color2) 1px);
     background-size: 5px 5px;
 }
 
@@ -319,7 +340,6 @@ figure > figcaption {
 }
 
 .social-list li a {
-    color: var(--font-color);
     text-decoration: none;
     margin-left: 5px;
 }
@@ -350,6 +370,8 @@ figure > figcaption {
     position: sticky;
     top: 0;
     width: 100%;
+    border-bottom: var(--tertiary-color) solid 1px;
+    background-color: var(--primary-color);
 }
 
 .navbar .nav.list {
@@ -451,7 +473,13 @@ figure > figcaption {
 .redirect-btn:hover{
 }
 
-/* Stage page style */
+/* BTS page style */
+
+
+.img-container img{
+    width: 100%;
+    height: auto;
+}
 
 .bts-docs-sec{
     padding-left: 15%;
