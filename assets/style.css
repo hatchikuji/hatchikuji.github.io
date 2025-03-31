@@ -1,5 +1,5 @@
 /* Ensure the body takes up the full height of the viewport */
-:root{
+:root {
     --primary-color: #d1cdb7;
     --secondary-color: #bab5a1;
     --tertiary-color: #454138;
@@ -74,33 +74,40 @@ footer {
     width: 100%;
     z-index: 1;
 }
+
 ::selection {
     background: var(--secondary-color);
 }
-a{
+
+a {
     color: inherit;
 }
-p{
+
+p {
     margin: 0 0 1rem 0;
 }
-mark{
+
+mark {
     background-color: var(--secondary-color);
     color: var(--fourth-color);
     padding: 0.2rem;
     border-radius: 0.2rem;
 }
-h1{
+
+h1 {
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
     text-shadow: 0.3rem 0.3rem 0 var(--secondary-color);
 }
+
 h2 {
     font-weight: lighter;
     border: solid var(--tertiary-color);
     border-width: 0.1rem 0;
     padding: 0.1rem 1rem;
 }
+
 h3,
 h4,
 h5,
@@ -108,10 +115,12 @@ h6 {
     font-weight: lighter;
     letter-spacing: 0.1rem;
 }
+
 cite {
     position: relative;
     padding-left: 2rem;
 }
+
 cite:before {
     content: '';
     position: absolute;
@@ -121,6 +130,7 @@ cite:before {
     margin-left: -1rem;
     top: 0.25em;
 }
+
 input[type=submit]:not(:disabled),
 input[type=button]:not(:disabled),
 input[type=reset]:not(:disabled) {
@@ -149,24 +159,28 @@ input[type=reset]:not(:disabled) {
     -ms-transition-property: color, background-color, box-shadow;
     transition-property: color, background-color, box-shadow;
 }
+
 input[type=submit]:not(:disabled):hover,
 input[type=button]:not(:disabled):hover,
 input[type=reset]:not(:disabled):hover {
     -webkit-box-shadow: 0.2em 0.2em 0.1em 0 var(--secondary-color);
     box-shadow: 0.2em 0.2em 0.1em 0 var(--secondary-color);
 }
+
 input[type=submit]:not(:disabled):hover,
 input[type=button]:not(:disabled):hover,
 input[type=reset]:not(:disabled):hover {
     background-color: var(--tertiary-color);
     color: var(--fourth-color);
 }
+
 input[type=submit]:not(:disabled):active,
 input[type=button]:not(:disabled):active,
 input[type=reset]:not(:disabled):active {
     background-color: var(--fourth-color);
     color: var(--tertiary-color);
 }
+
 input:disabled,
 button:disabled,
 .button-disabled {
@@ -186,6 +200,7 @@ button:disabled,
     color: var(--secondary-color);
     cursor: not-allowed;
 }
+
 button:not(:disabled),
 .button {
     padding: 0.5rem;
@@ -215,11 +230,13 @@ button:not(:disabled),
     position: relative;
     z-index: 1;
 }
+
 button:not(:disabled):hover,
 .button:hover {
     -webkit-box-shadow: 0.2em 0.2em 0.1em 0 var(--secondary-color);
     box-shadow: 0.2em 0.2em 0.1em 0 var(--secondary-color);
 }
+
 button:not(:disabled):before,
 .button:before {
     content: '';
@@ -234,6 +251,7 @@ button:not(:disabled):before,
     left: 0;
     right: 0;
 }
+
 button:not(:disabled):after,
 .button:after {
     content: '';
@@ -255,11 +273,13 @@ button:not(:disabled):after,
     background-color: var(--tertiary-color);
     z-index: -1;
 }
+
 button:not(:disabled):hover,
 .button:hover {
     background-color: transparent;
     color: var(--fourth-color);
 }
+
 button:not(:disabled):hover:before,
 .button:hover:before {
     top: -0.2rem;
@@ -267,18 +287,22 @@ button:not(:disabled):hover:before,
     border: solid var(--tertiary-color);
     border-width: 0.1rem 0;
 }
+
 button:not(:disabled):hover:after,
 .button:hover:after {
     width: 100%;
 }
+
 button:not(:disabled):active,
 .button:active {
     color: var(--tertiary-color);
 }
+
 button:not(:disabled):active:after,
 .button:active:after {
     background-color: var(--fourth-color);
 }
+
 ::-webkit-input-placeholder,
 ::-moz-placeholder,
 ::-ms-input-placeholder {
@@ -298,10 +322,12 @@ button:not(:disabled):active:after,
     color: var(--secondary-color);
     font-weight: lighter;
 }
+
 blockquote {
     position: relative;
     padding: 0.5rem;
 }
+
 blockquote:before {
     content: '';
     position: absolute;
@@ -313,10 +339,12 @@ blockquote:before {
     border: solid var(--secondary-color);
     border-width: 0 0.2rem 0 0.6rem;
 }
+
 cite {
     position: relative;
     padding-left: 2rem;
 }
+
 cite:before {
     content: '';
     position: absolute;
@@ -325,6 +353,7 @@ cite:before {
     background-color: var(--tertiary-color);
     top: 0.25em;
 }
+
 figure {
     display: -webkit-box;
     display: -moz-box;
@@ -342,9 +371,11 @@ figure {
     background-color: var(--fourth-color);
     padding: 0.5rem;
 }
+
 figure > :not(figcaption) {
     margin: 0.5rem;
 }
+
 figure > figcaption {
     -webkit-box-ordinal-group: -1;
     -moz-box-ordinal-group: -1;
@@ -359,6 +390,7 @@ figure > figcaption {
     background-color: var(--tertiary-color);
     color: var(--secondary-color);
 }
+
 /* Social bar style */
 .social-bg {
     background-color: inherit;
@@ -446,19 +478,20 @@ figure > figcaption {
     padding: 20px;
     text-align: center;
 }
+
 /* Index page style */
 
-.index-main{
+.index-main {
     display: grid;
     align-items: center;
     justify-items: center;
 }
 
-.indexh1{
+.indexh1 {
     align-self: flex-end;
 }
 
-.i-desc{
+.i-desc {
     display: block;
     justify-content: center;
     align-items: center;
@@ -470,7 +503,7 @@ figure > figcaption {
 
 /* Projets page style */
 
-.thumbnails{
+.thumbnails {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 10px;
@@ -478,7 +511,7 @@ figure > figcaption {
     padding-right: 20%;
 }
 
-.thumblist{
+.thumblist {
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -490,11 +523,11 @@ figure > figcaption {
     transition: transform 0.3s;
 }
 
-.thumblist:hover{
+.thumblist:hover {
     transform: scale(1.05);
 }
 
-.thumblist img{
+.thumblist img {
     max-width: 100%;
     height: auto;
 }
@@ -503,7 +536,7 @@ figure > figcaption {
     margin: 10px 0;
 }
 
-.redirect-btn{
+.redirect-btn {
     display: inline-block;
     text-decoration: none;
     padding: 3% 4%;
@@ -512,58 +545,69 @@ figure > figcaption {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.redirect-btn:hover{
+.redirect-btn:hover {
 }
 
 /* BTS page style */
-.fig-img{
+.fig-img {
     display: flex;
-    width: 50%;
+    width: 100%;
 }
-.fig-img div{
+
+.fig-img div {
     align-self: center;
     justify-content: center;
 }
-.img-container{
+
+.img-container {
     width: 100%;
 }
-.img-container img{
+
+.img-container img {
     width: 100%;
     height: auto;
 }
-.bts-docs{
- display: contents;
-}
-.grille{
+
+.bts-docs {
     display: flex;
-    gap: 1em;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
 }
-.bts-docs-sec{
+
+.btsdoc2 {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.bts-docs-sec {
     padding-left: 15%;
     padding-right: 15%;
     display: grid;
     justify-items: center;
 }
 
-.bts-docs-list{
+.bts-docs-list {
     display: flex;
     gap: 1rem;
     list-style: none;
     text-align: left;
 }
 
-.headerstage{
+.headerstage {
     padding: 2%;
 }
 
-.stage-sec{
+.stage-sec {
     padding-left: 15%;
     padding-right: 15%;
     display: grid;
     justify-items: center;
 }
 
-.stage-list{
+.stage-list {
     display: flex;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 10px;
@@ -573,25 +617,26 @@ figure > figcaption {
     border-radius: 1px;
     padding-left: 0;
     width: 70%;
-    
+
 }
 
-.stage-list img{
+.stage-list img {
     max-width: 100%;
     height: auto;
 }
 
-.stage{
+.stage {
     display: grid;
     padding: 2%;
     width: 50%;
 }
-.stage-container{
+
+.stage-container {
 
 
 }
 
-.certif-sec{
+.certif-sec {
     padding-left: 15%;
     padding-right: 15%;
     width: auto;
@@ -600,7 +645,7 @@ figure > figcaption {
     justify-items: center;
 }
 
-.certif-list{
+.certif-list {
     display: flex;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 10px;
@@ -613,12 +658,12 @@ figure > figcaption {
     width: 40%;
 }
 
-.certif-list img{
+.certif-list img {
     max-width: 100%;
     height: auto;
 }
 
-.certif{
+.certif {
     transition: transform 0.3s;
     padding: 2%;
     width: 50%;
@@ -626,7 +671,7 @@ figure > figcaption {
 
 /* About page style */
 
-.profile-container{
+.profile-container {
     display: flex;
     justify-content: space-evenly;
     min-height: 450PX;
@@ -636,11 +681,11 @@ figure > figcaption {
     width: 30%;
 }
 
-.profile-cv img{
+.profile-cv img {
     width: 100%;
 }
 
-.profile-description{
+.profile-description {
     width: 45%;
     padding: 3%;
     scroll-behavior: smooth;
@@ -675,13 +720,21 @@ figure > figcaption {
 }
 
 @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
 
 @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: var(--tertiary-color); }
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: var(--tertiary-color);
+    }
 }
 
 
@@ -693,6 +746,7 @@ figure > figcaption {
     pointer-events: none;
     transition: transform 0.1s ease;
 }
+
 /* Container for the corner decoration */
 .corner-decor {
     position: fixed;
@@ -727,6 +781,7 @@ figure > figcaption {
     right: 0;
     transform: translate(50%, 50%);
 }
+
 .arc3 {
     width: 145.11vh;
     height: 145.11vh;
@@ -734,6 +789,7 @@ figure > figcaption {
     left: 0;
     transform: translate(-50%, -50%);
 }
+
 .arc4 {
     width: 140.44vh;
     height: 140.44vh;
@@ -769,28 +825,31 @@ figure > figcaption {
 .line3 {
     bottom: 0;
     right: -3vw;
-    height:  125vh;
+    height: 125vh;
     transform: rotate(-45deg);
     transform-origin: bottom right;
 }
+
 .line4 {
     top: 0;
     left: 0;
-    height:  130vh;
+    height: 130vh;
     transform: rotate(-45deg);
     transform-origin: top left;
 }
+
 .line5 {
     top: 0;
     left: 3vw;
-    height:  110vh;
+    height: 110vh;
     transform: rotate(-45deg);
     transform-origin: top left;
 }
+
 .line6 {
     top: 0;
     left: -3vw;
-    height:  125vh;
+    height: 125vh;
     transform: rotate(-45deg);
     transform-origin: top left;
 }
@@ -807,10 +866,10 @@ figure > figcaption {
     }
 
     .nav-ico {
-        width: 4vw; 
+        width: 4vw;
         height: 4vw;
     }
-    
+
     .dropdown-content {
         position: relative;
     }
@@ -841,7 +900,7 @@ figure > figcaption {
         position: relative;
         padding: 3% 3% 40%;
     }
-    
+
     .profile-description {
         text-align: justify;
     }
