@@ -7,6 +7,7 @@
     --grid-color: #ccc8b1;
     --grid-color2: #ccc8b100;
     --symbol-color: #b5b09c;
+    --tag-color: #b35841;
     font-family: "Rodin Pro DB", serif;
 }
 
@@ -505,10 +506,11 @@ figure > figcaption {
 
 .thumbnails {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
     gap: 10px;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: auto;
 }
 
 .thumblist {
@@ -516,7 +518,7 @@ figure > figcaption {
     display: flex;
     align-items: center;
     padding: 20px;
-    text-align: center;
+    text-align: left;
     border-radius: 1px;
     flex-direction: column;
     justify-content: space-between;
@@ -533,9 +535,21 @@ figure > figcaption {
 }
 
 .thumblist p {
-    margin: 10px 0;
 }
 
+.thumblist figure {
+    width: 100%;
+}
+
+.pro-lang{
+    display: ruby;
+
+}
+.pro-lang p {
+    padding: 0 0.2rem 0 0.2rem;
+    background: var(--tag-color);
+    color: var(--primary-color);
+}
 .redirect-btn {
     display: inline-block;
     text-decoration: none;
