@@ -44,7 +44,6 @@ body {
     color: var(--tertiary-color);
     display: flex;
     flex-direction: column;
-    height: 100vh;
     width: auto;
     margin: 0;
     padding: 0;
@@ -57,7 +56,7 @@ body {
 
 /* Main style */
 main {
-    height: 100%;
+    height: auto;
     width: auto;
     display: flex;
     flex: 1;
@@ -70,7 +69,6 @@ main {
 footer {
     text-align: center;
     padding: 10px 0;
-    position: fixed;
     bottom: 0;
     width: 100%;
     z-index: 1;
@@ -422,8 +420,8 @@ figure > figcaption {
 
 /* Header style */
 .header {
-    text-align: center;
-    padding: 50px 0 10px 0;
+    text-align: left;
+    padding: 0 10% 0 10%;
 }
 
 
@@ -488,15 +486,14 @@ figure > figcaption {
     justify-items: center;
 }
 
-.indexh1 {
-    align-self: flex-end;
+.indexh1{
+    padding: 10%;
 }
 
 .i-desc {
     display: block;
     justify-content: center;
     align-items: center;
-    align-self: flex-start;
     text-align: center;
     padding-left: 10%;
     padding-right: 10%;
@@ -645,11 +642,6 @@ figure > figcaption {
     width: 50%;
 }
 
-.stage-container {
-
-
-}
-
 .certif-sec {
     padding-left: 15%;
     padding-right: 15%;
@@ -683,7 +675,21 @@ figure > figcaption {
     width: 50%;
 }
 
+/* Veille page style */
+
+.veille-sec {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: grid;
+}
+
 /* About page style */
+
+.profile-bg{
+    padding: 3% 0;
+    height: 90%;
+
+}
 
 .profile-container {
     display: flex;
@@ -701,7 +707,8 @@ figure > figcaption {
 
 .profile-description {
     width: 45%;
-    padding: 3%;
+    padding: 3% 0;
+    align-content: center;
     scroll-behavior: smooth;
 }
 
@@ -709,7 +716,40 @@ figure > figcaption {
     text-align: center;
     margin-top: 20px;
 }
-
+.profile-competences{
+    padding: 1.5% 3% 0 3%;
+    align-items: center;
+    text-align: center;
+}
+.profile-certif{
+    padding: 0 3%;
+    text-align: center;
+}
+.skills-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.skills-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    width: 10%;
+}
+.skills-list li span{
+    background: var(--tag-color);
+    color: var(--primary-color);
+    padding: 0 0.2rem;
+}
+.skills-list li p{
+    padding: 0 0.2rem;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+.skills-list img{
+    width: 100%
+}
 .download-btn {
     display: inline-block;
     text-decoration: none;
